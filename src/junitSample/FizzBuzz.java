@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz {
+	public static void main(String args[]){
+		List<String> results = doFizzBuzz();
+		for(String result : results) System.out.println(result);
+	}
+
 	static public String isFizzBuzz(int i){
 		if(i % 3 == 0 && i % 5 == 0) return "FizzBuzz";
 		if(i % 5 == 0) return "Buzz";
